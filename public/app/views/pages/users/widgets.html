@@ -1,0 +1,121 @@
+
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  padding-left: 253px;
+  background-color: #f0f0f0;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #333333;
+  position: absolute;
+  left:0;
+  border: 1px solid #000;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 0;
+  padding-top:40px;
+  height: 1000px;
+}
+
+#scroller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+} 
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 265px;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+    </style>
+
+<div class="sidebar">
+    <div id="scroller">
+        <a class="active" href="#dashboard"> DashBoard</a>
+            <a href="#metering" > Metering </a>
+            <a href="#API"> API Management</a>
+            <a href="#Scaler"> Scaler </a>
+            <a href="#DevOps"> DevOps </a>
+            <a href="#" ng-click="select('App Store')"> App Store </a>
+            <a href="#" ng-click="select('Training Material')"> Training Material </a>
+            <a href="#" ng-click="select('IDE')">Ticketing</a>
+            <a href="#" ng-click="select('Debugger')">Debugger</a>
+            <a href="#" ng-click="select('IAM')">IAM</a>
+            <a href="#" ng-click="select('Logging')">Logging</a>
+            <a href="#" ng-click="select('Monitoring')">Monitoring</a>
+            <a href="#" ng-click="select('Catalogue')">Catalogue</a>
+            <a href="#" ng-click="select('Documentation')">Documentation</a>
+            <a href="#" ng-click="select('Messaging')">Messaging</a>
+            <a href="#" ng-click="select('ServiceMesh')">Service Mesh</a>
+    </div>
+
+    
+  </div>
+<div ng-style="{'background-color' : 'white'">
+  <div id="content">
+    <div class="card tab-content" id="metering">
+      <div class="card-header">
+        <h2> Metering </h2>
+      </div>
+
+    </div>
+    <div class="card tab-content" id="API">
+      <div class="card-header">
+        <h2> API Management </h2>
+      </div>
+
+    </div>
+    <div class="card tab-content" id="Scaler">
+      <div class="card-header">
+        <h2> Scaler </h2>
+      </div>
+
+    </div>
+    <div class="card tab-content" id="DevOps">
+      <div class="card-header">
+        <h2> DevOps </h2>
+      </div>
+
+    </div>
+ 
+ </div>
+</div>
