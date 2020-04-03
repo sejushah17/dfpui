@@ -1,0 +1,18 @@
+Feature         Scope
+-------------------------
+Metering	    Global
+API Management	Global
+Dashboard   	Global
+Scaler	        Project
+DevOps	        Sub-Group
+App Store   	Global
+Training Material	Global
+IDE	            Global
+Debugger    	Project
+IAM	            Group
+Logging	        Sub-Group
+Monitoring	    Sub-Group
+Catalogue	    Global
+Documentation	Global
+Messaging	    Project
+ServiceMesh 	Global
